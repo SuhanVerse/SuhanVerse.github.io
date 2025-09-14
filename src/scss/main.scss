@@ -1,41 +1,15 @@
-@charset 'UTF-8';
+@use 'abstracts/variables';
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
 
-// 1. Configuration and helpers
+@use 'base/base';
+@use 'base/animations';
+@use 'base/type';
+@use 'base/utils';
+@use 'base/grid';
 
-@import 
-    'abstracts/variables', 
-    'abstracts/functions', 
-    'abstracts/mixins';
+@use 'components/button';
+@use 'components/navigation';
+@use 'components/popup';
 
-// 2. Vendors
-
-
-
-// 3. Base stuff
-
-@import 
-    'base/base',
-    'base/animations', 
-    'base/type', 
-    'base/utils',
-    'base/grid';
-
-// 4. Layout-related stuff
-
-
-
-// 5. Components
-
-@import
-    'components/button',
-    'components/navigation',
-    'components/popup';
-
-// 6. Page-specific styles
-
-@import
-  'pages/home';
-
-// 7. Themes
-
-
+@use 'pages/home';

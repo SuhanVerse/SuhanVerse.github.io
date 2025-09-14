@@ -1,18 +1,33 @@
+@charset 'UTF-8';
 
-/* ----- Size ----- */
+/* ----- Typography ----- */
+$font-size-base: 1.6rem;
+$font-size-sm: 1.4rem;
+$font-size-lg: 2rem;
+$font-stack: 'Josefin Sans', sans-serif;
 
-$default-font-size: 1.6rem;
+/* ----- Colors: Base Palette ----- */
+$white: #fff;
+$white-light: #f4f4f4;
+$white-muted: #91abaa;
 
+$black: #000;
+$black-muted: #555;
+$black-deep: #293335;
 
-/* ----- Colors ----- */
+/* ----- Colors: Semantic Roles ----- */
+$color-bg: $white-light;
+$color-text: $black-deep;
+$color-accent: #0077b6;
+$color-border: #ddd;
+$color-shadow: rgba(0, 0, 0, 0.1);
 
-$color-white: #fff;
-$color-white-1: #f4f4f4;
-$color-white-2: #91abaa;
-$color-black: #000;
-$color-black-1: #555;
-$color-black-0: #293335;
-
-/* ----- Grid ----- */
-
+/* ----- Grid & Spacing ----- */
 $gutter-vertical: 8rem;
+$gutter-horizontal: 4rem;
+
+$spacing-xs: 0.8rem;
+$spacing-sm: 1.6rem;
+$spacing-md: 3.2rem;
+$spacing-lg: 4.8rem;
+$spacing-xl: 6.4rem;
