@@ -14,7 +14,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: $default-font-size;
+  font-size: abs.$font-size-base;
   font-weight: 300;
   color: $color-black-1;
   background-color: $color-white;
