@@ -1,7 +1,10 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mix;
+
 /* ----- Headings ----- */
 .heading-primary {
   font-weight: 400;
-  color: $white;
+  color: vars.$white;
   opacity: 0.8;
   display: inline-block;
   font-size: 4.8rem;
@@ -14,7 +17,7 @@
 .heading-secondary {
   font-size: 2.4rem;
   font-weight: 400;
-  @include underline;
+  @include mix.underline;
 
   @media (min-width: 768px) {
     font-size: 4.5rem;

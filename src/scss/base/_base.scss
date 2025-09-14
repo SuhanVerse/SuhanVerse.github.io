@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as vars;
+
+
 /* Reset and Box Model */
 *,
 *::before,
@@ -14,17 +17,17 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: abs.$font-size-base;
+  font-size: vars.$font-size-base;
   font-weight: 300;
-  color: $color-black-1;
-  background-color: $color-white;
+  color: vars.$black-muted;
+  background-color: vars.$white;
   line-height: 1.6;
 }
 
 /* Typography */
 p {
   line-height: 1.7;
-  margin-bottom: $spacing-sm;
+  margin-bottom: vars.$spacing-sm;
 }
 
 /* Layout */

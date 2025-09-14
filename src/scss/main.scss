@@ -1,6 +1,8 @@
 @use 'abstracts/variables';
 @use 'abstracts/functions';
 @use 'abstracts/mixins';
+@use 'abstracts' as abs;
+
 
 @use 'base/base';
 @use 'base/animations';
@@ -13,4 +15,3 @@
 @use 'components/popup';
 
 @use 'pages/home';
-@use 'abstracts' as *;
