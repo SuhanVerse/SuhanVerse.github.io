@@ -75,7 +75,6 @@ SuhanVerse.github.io/
 ## 📸 Featured Projects
 
 - 🔧 [LSPP60days Challenge](https://github.com/SuhanVerse/LSPP60days-Challenge) — Embedded Rust + AI/ML
-- 🌐 [PortfolioSite](https://github.com/SuhanVerse/PortfolioSite) — GitHub-hosted personal site
 
 ---
 
