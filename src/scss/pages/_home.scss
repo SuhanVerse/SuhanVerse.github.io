@@ -8,7 +8,10 @@
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background-image: linear-gradient(rgba(vars.$black, 0.2), rgba(vars.$black, 0.3)), url('../img/header.jpg');
+  background-image: linear-gradient(rgba(vars.$black, 0.2), rgba(vars.$black, 0.3)), image-set(
+  url('../compressed/header.webp') type('image/webp'),
+  url('../compressed/header.jpg') type('image/jpeg')
+);
   background-size: cover;
   background-position: center;
   text-align: center;

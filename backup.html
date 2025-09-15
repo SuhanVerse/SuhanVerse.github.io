@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suhan Khadka | Embedded Systems & AI Developer</title>
+  <meta name="description" content="Hi, I'm Suhan. I build intelligent systems, full-stack web apps, and embedded solutions with a focus on performance, clarity, and creativity." />
+
+  <!-- SEO & Social Meta Tags -->
+  <meta itemprop="name" content="Suhan Khadka | Embedded Systems & AI Developer" />
+  <meta itemprop="description" content="Hi, I'm Suhan. I build intelligent systems, full-stack web apps, and embedded solutions with a focus on performance, clarity, and creativity." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Suhan Khadka | Embedded Systems & AI Developer" />
+  <meta property="og:description" content="Hi, I'm Suhan. I build intelligent systems, full-stack web apps, and embedded solutions with a focus on performance, clarity, and creativity." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Suhan Khadka | Embedded Systems & AI Developer" />
+  <meta name="twitter:description" content="Hi, I'm Suhan. I build intelligent systems, full-stack web apps, and embedded solutions with a focus on performance, clarity, and creativity." />
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet" />
+  <script type="module" src="./js/index.js"></script>
+  <style>
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #005f8a;
+  }
+
+  .navigation__link {
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navToggle = document.getElementById("nav-toggle");
+    const navLinks = document.querySelectorAll(".navigation__link");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navToggle.checked = false;
+      });
+    });
+  });
+</script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Suhan Khadka",
+  "url": "https://suhanverse.github.io",
+  "sameAs": [
+    "https://github.com/SuhanVerse",
+    "https://www.linkedin.com/in/suhan-khadka/",
+    "https://x.com/ultraman_62"
+  ],
+  "jobTitle": "Computer Engineer",
+  "description": "Engineer crafting embedded systems, intelligent applications, and full-stack experiences."
+}
+</script>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+    <label for="nav-toggle" class="navigation__button">
+      <span class="navigation__icon" aria-label="toggle navigation menu">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+    <nav class="navigation__nav" role="navigation">
+      <ul class="navigation__list">
+        <li><a href="#about" class="navigation__link">About</a></li>
+        <li><a href="#skill" class="navigation__link">Skills</a></li>
+        <li><a href="#work" class="navigation__link">Projects</a></li>
+        <li><a href="#connect" class="navigation__link">Connect</a></li>
+        <li><a href="#footer" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header class="header" role="banner" id="header">
+    <div class="header__text-box">
+      <h1 class="heading-primary">Hi! I'm Suhan</h1>
+      <p class="header__description">
+        A Computer Engineer crafting embedded systems, intelligent applications, and full-stack web experiences.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main role="main">
+    <!-- Intro -->
+    <section class="intro">
+      <div class="row">
+        <h2 class="heading-secondary">Welcome to My Portfolio</h2>
+        <p class="intro-text">
+          Whether you're exploring embedded Rust, AI/ML workflows, or full-stack web development, you'll find projects here that blend precision with creativity. I document my process publicly and love sharing reproducible, well-structured work.
+        </p>
+        <a href="https://github.com/SuhanVerse" class="btn">Explore My GitHub</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="u-text-center">
+        <picture>
+          <source srcset="./compressed/mypic.webp" type="image/webp" />
+          <img src="./img/mypic.jpg" alt="Suhan Khadka" class="profile-pic" />
+          </picture>
+        <h2 class="heading-secondary">About Me</h2>
+      </div>
+      <p class="intro-text">
+        I'm a Computer Engineering student from Lalitpur, Nepal. I thrive on solving real-world problems through embedded systems and intelligent software. My approach is hands-on, iterative, and community-driven. I believe in clarity, reproducibility, and expressive design.
+      </p>
+      <a href="./cv.pdf" class="btn" target="_blank" download>Download My CV</a>
+    </section>
+
+    <!-- Skills -->
+    <section class="skill" id="skill">
+      <div class="u-text-center">
+        <h2 class="heading-secondary">Technical Stack</h2>
+        <p class="intro-text">
+          I work across hardware and software domains:
+          <br />
+          • Embedded Rust, AVR, Arduino, IoT<br />
+          • Python (AI/ML), TensorFlow, Keras, Scikit-learn<br />
+          • MERN Stack, Docker, GitHub Actions<br />
+          • UI/UX Design (Figma), 3D Modeling (Fusion 360)<br />
+          • CI/CD, Markdown, GitHub Pages, LaTeX
+        </p>
+        <a href="#work" class="btn">View My Projects</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="work" id="work">
+      <div class="u-text-center">
+        <h2 class="heading-secondary">Featured Projects</h2>
+        <p class="intro-text">
+          • <a href="https://github.com/SuhanVerse/LSPP60days-Challenge">LSPP60days Challenge</a>: Embedded Rust + AI/ML<br />
+          • <a href="https://github.com/SuhanVerse/PortfolioSite">GitHub Portfolio Site</a><br />
+          More coming soon...
+        </p>
+      </div>
+    </section>
+
+    <!-- Connect -->
+    <section class="connect" id="connect">
+      <div class="u-text-center">
+        <h2 class="heading-secondary">📫 Connect With Me</h2>
+        <div class="social-icons">
+          <a href="https://x.com/ultraman_62" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg" height="40" alt="X" /></a>
+          <a href="https://www.linkedin.com/in/suhan-khadka/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" height="40" alt="LinkedIn" /></a>
+          <a href="https://facebook.com/suhan.khadka.35" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" height="40" alt="Facebook" /></a>
+          <a href="https://instagram.com/suhan.khadka.30" target="_blank"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram" /></a>
+          <a href="mailto:khsuhan100@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" height="40" alt="Gmail" /></a>
+        </div>
+      </div>
+      <form action="https://formspree.io/f/xgvlbaqz" method="POST" class="contact-form">
+  <label for="email">Your email:</label>
+  <input type="email" name="email" id="email" required />
+
+  <label for="message">Your message:</label>
+  <textarea name="message" id="message" rows="5" required></textarea>
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+  <footer class="footer" id="footer">
+    <nav>
+      <ul class="footer__social-links">
+        <li><a href="https://github.com/SuhanVerse">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/suhan-khadka/">LinkedIn</a></li>
+        <li><a href="mailto:khsuhan100@gmail.com">khsuhan100@gmail.com</a></li>
+      </ul>
+    </nav>
+    <div class="footer__outro">
+      <p class="footer__info">Crafted in Nepal by Suhan Khadka</p>
+      <p class="footer__info">&copy;2025. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suhan Khadka | Embedded Systems & AI Developer</title>
+  <meta name="description" content="Hi, I'm Suhan. I build intelligent systems, full-stack web apps, and embedded solutions with a focus on performance, clarity, and creativity." />
+
+  <!-- SEO & Social Meta Tags -->
+  <meta itemprop="name" content="Suhan Khadka | Embedded Systems & AI Developer" />
+  <meta itemprop="description" content="Hi, I'm Suhan. I build intelligent systems, full-stack web apps, and embedded solutions with a focus on performance, clarity, and creativity." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Suhan Khadka | Embedded Systems & AI Developer" />
+  <meta property="og:description" content="Hi, I'm Suhan. I build intelligent systems, full-stack web apps, and embedded solutions with a focus on performance, clarity, and creativity." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Suhan Khadka | Embedded Systems & AI Developer" />
+  <meta name="twitter:description" content="Hi, I'm Suhan. I build intelligent systems, full-stack web apps, and embedded solutions with a focus on performance, clarity, and creativity." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script type="module" src="./js/index.js"></script>
+  <style>
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .intro-text, .header__description, .footer__info {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background-color: #0077b6;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #005f8a;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      max-width: 600px;
+      margin: 3rem auto;
+      text-align: left;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 2rem;
+      font-family: inherit;
+    }
+
+    .social-icons img {
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer__social-links {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .footer__social-links a {
+      color: #0077b6;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer__social-links a:hover {
+      color: #023e8a;
+    }
+
+    .navigation__link {
+      cursor: pointer;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.getElementById("nav-toggle");
+      const navLinks = document.querySelectorAll(".navigation__link");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          navToggle.checked = false;
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+    <label for="nav-toggle" class="navigation__button">
+      <span class="navigation__icon" aria-label="toggle navigation menu">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+    <nav class="navigation__nav" role="navigation">
+      <ul class="navigation__list">
+        <li><a href="#about" class="navigation__link">About</a></li>
+        <li><a href="#skill" class="navigation__link">Skills</a></li>
+        <li><a href="#work" class="navigation__link">Projects</a></li>
+        <li><a href="#connect" class="navigation__link">Connect</a></li>
+        <li><a href="#footer" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header class="header" role="banner" id="header">
+    <div class="header__text-box">
+      <h1 class="heading-primary">Hi! I'm Suhan</h1>
+      <p class="header__description">
+        A Computer Engineer crafting embedded systems, intelligent applications, and full-stack web experiences.
+      </p>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section class="intro">
+    <h2 class="heading-secondary">Welcome to My Portfolio</h2>
+    <p class="intro-text">
+      Whether you're exploring embedded Rust, AI/ML workflows, or full-stack web development, you'll find projects here that blend precision with creativity. I document my process publicly and love sharing reproducible, well-structured work.
+    </p>
+    <a href="https://github.com/SuhanVerse" class="btn">Explore My GitHub</a>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <picture>
+      <source srcset="./compressed/mypic.webp" type="image/webp" />
+      <img src="./img/mypic.jpg" alt="Suhan Khadka" class="profile-pic" />
+    </picture>
+    <h2 class="heading-secondary">About Me</h2>
+    <p class="intro-text">
+      I'm a Computer Engineering student from Lalitpur, Nepal. I thrive on solving real-world problems through embedded systems and intelligent software. My approach is hands-on, iterative, and community-driven. I believe in clarity, reproducibility, and expressive design.
+    </p>
+    <a href="./cv.pdf" class="btn" target="_blank" download>Download My CV</a>
+  </section>
+
+  <!-- Skills -->
+  <section class="skill" id="skill">
+    <h2 class="heading-secondary">Technical Stack</h2>
+    <p class="intro-text">
+      I work across hardware and software domains including Embedded Rust, AVR, Arduino, IoT, Python (AI/ML), TensorFlow, Keras, Scikit-learn, MERN Stack, Docker, GitHub Actions, UI/UX Design (Figma), 3D Modeling (Fusion 360), CI/CD, Markdown, GitHub Pages, and LaTeX.
+    </p>
+    <a href="#work" class="btn">View My Projects</a>
+  </section>
+
+  <!-- Projects -->
+  <section class="work" id="work">
+    <h2 class="heading-secondary">Featured Projects</h2>
+    <p class="intro-text">
+      <a href="https://github.com/SuhanVerse/LSPP60days-Challenge">LSPP60days Challenge</a> – Embedded Rust + AI/ML<br />
+      <a href="https://github.com/SuhanVerse/PortfolioSite">GitHub Portfolio Site</a><br />
+      More coming soon...
+    </p>
+  </section>
+
+  <!-- Connect -->
+  <section class="connect" id="connect">
+    <h2 class="heading-secondary">📫 Connect With Me</h2>
+    <div class="social-icons">
+      <a href="https://x.com/ultraman_62" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg" height="40" alt="X" /></a>
+      <a href="https://www.linkedin.com/in/suhan-khadka/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" height="40" alt="LinkedIn" /></a>
+      <a href="https://facebook.com/suhan.khadka.35" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" height="40" alt="Facebook" /></a>
+      <a href="https://instagram.com/suhan.khadka.30" target="_blank"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram" /></a>
+      <a href="mailto:khsuhan100@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" height="40" alt="Gmail" /></a>
+    </div>
+
+    <form action="https://formspree.io/f/xgvlbaqz" method="POST" class="contact-form">
+      <label for="name">Your name:</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Your email:</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="message">Your message:</label>
+      <textarea name="message" id="message" rows="6" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <nav>
+      <ul class="footer__social-links">
+        <li><a href="https://github.com/SuhanVerse" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/suhan-khadka/" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:khsuhan100@gmail.com">khsuhan100@gmail.com</a></li>
+      </ul>
+    </nav>
+    <div class="footer__outro">
+      <p class="footer__info">Crafted in Nepal by Suhan Khadka</p>
+      <p class="footer__info">&copy;2025. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

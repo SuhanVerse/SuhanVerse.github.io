@@ -16,8 +16,16 @@
   "devDependencies": {
     "@babel/core": "^7.22.0",
     "@babel/preset-env": "^7.22.5",
+    "@parcel/packager-raw-url": "^2.15.4",
+    "@parcel/transformer-jsonld": "^2.15.4",
     "@parcel/transformer-sass": "^2.15.4",
     "cssnano": "^6.0.1",
+    "imagemin": "^9.0.1",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-pngquant": "^5.0.1",
+    "imagemin-webp": "^8.0.0",
     "parcel": "^2.15.4",
     "sass": "^1.69.0"
   },
