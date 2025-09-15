@@ -1,0 +1,322 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mix;
+
+/* ------------------------------------- */
+/* ----- Header ----- */
+/* ------------------------------------- */
+.header {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background-image: linear-gradient(rgba(vars.$black, 0.2), rgba(vars.$black, 0.3)), url('../img/header.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 150rem;
+    transform: translate(-50%, -50%);
+    opacity: 0.95;
+  }
+
+  &__description {
+    max-width: 50rem;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    color: vars.$color-white;
+    opacity: 0.7;
+
+    @media (min-width: 768px) {
+      width: 70%;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__director {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding-bottom: 1rem;
+    transform: translateX(-50%);
+    color: vars.$color-white;
+    opacity: 0.7;
+
+    @media (min-width: 768px) {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+/* ------------------------------------- */
+/* ----- Intro ----- */
+/* ------------------------------------- */
+.intro {
+  text-align: center;
+  background: vars.$white-light;
+
+  @media (min-width: 768px) {
+    padding: 8rem 0;
+  }
+}
+
+/* ------------------------------------- */
+/* ----- About ----- */
+/* ------------------------------------- */
+.about {
+  background-color: vars.$white-light;
+  text-align: center;
+  padding: vars.$spacing-lg vars.$spacing-sm;
+
+  @media (min-width: 768px) {
+    padding: vars.$spacing-xl 0;
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: vars.$color-text;
+    margin-bottom: vars.$spacing-md;
+
+    @media (min-width: 768px) {
+      font-size: 4rem;
+    }
+  }
+
+  &__text {
+    max-width: 60rem;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: vars.$black-muted;
+
+    @media (min-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: vars.$spacing-lg auto vars.$spacing-md auto;
+    height: auto;
+    max-width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba(vars.$black, 0.1);
+  }
+}
+
+/* ------------------------------------- */
+/* ----- Craft ----- */
+/* ------------------------------------- */
+.craft {
+  background: #f9f9f9;
+
+  .row {
+    margin-top: 3rem;
+
+    @media (min-width: 768px) {
+      margin-top: 5rem;
+      display: table;
+      padding: 3rem 10rem;
+    }
+  }
+
+  .hack {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  &__item {
+    display: block;
+    margin: auto;
+    max-width: 50rem;
+    text-align: center;
+    border: 1px solid vars.$color-border;
+    padding: 2rem 1rem;
+    background: vars.$white;
+    box-shadow: 0 0.2rem 0.2rem rgba(vars.$black, 0.1);
+    border-radius: 3px;
+
+    &:first-of-type {
+      margin: 0 auto 2rem auto;
+    }
+
+    @media (min-width: 768px) {
+      display: table-cell;
+      padding: 3rem;
+    }
+  }
+
+  &__img {
+    height: 9rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    fill: vars.$black-muted;
+  }
+
+  &__description {
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+/* ------------------------------------- */
+/* ----- Skills ----- */
+/* ------------------------------------- */
+.skill {
+  background: #f8f8f8;
+  text-align: center;
+
+  .row {
+    max-width: 500px;
+  }
+
+  &__img {
+    display: inline-block;
+    fill: vars.$color-black-1;
+    height: 10rem;
+    margin: 1rem 2rem;
+  }
+
+  [href^='http'] {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed #bdbcbc;
+    transition: all 0.2s;
+
+    &:hover {
+      border-bottom: 1px dashed #818080;
+    }
+  }
+
+  .btn-text {
+    margin-top: 2rem;
+  }
+}
+
+/* ------------------------------------- */
+/* ----- Work ----- */
+/* ------------------------------------- */
+.work {
+  text-align: center;
+
+  &__construction {
+    display: block;
+    margin: 3rem auto;
+    height: 10rem;
+
+    @media (min-width: 768px) {
+      height: 20rem;
+    }
+  }
+
+  [href^='http'] {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed #bdbcbc;
+    transition: all 0.2s;
+
+    &:hover {
+      border-bottom: 1px dashed #818080;
+    }
+  }
+}
+
+/* ------------------------------------- */
+/* ----- Footer ----- */
+/* ------------------------------------- */
+.footer {
+  background: vars.$black-deep;
+  color: vars.$white-muted;
+  padding: 5rem 5rem 0 5rem;
+
+  &__social-links {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 6rem;
+  }
+
+  &__social-link {
+    display: inline-block;
+    font-size: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 2.6rem;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #c6d8d7;
+      }
+    }
+  }
+
+  &__outro {
+    text-align: center;
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 3rem 1rem 4rem 1rem;
+    border-top: 1px solid #394344;
+
+    @media (min-width: 768px) {
+      @include mix.clearfix;
+
+      p {
+        float: left;
+
+        &:not(:last-child) {
+          float: right;
+        }
+      }
+    }
+  }
+
+  &__info {
+    font-size: 1.8rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.3rem;
+    }
+
+    a {
+      border-bottom: 1px dashed;
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:hover {
+        color: vars.$white-light;
+      }
+    }
+  }
+
+  .number {
+    color: vars.$white-muted !important;
+    margin: 2rem 0 0 0;
+    font-size: 1.8rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.3rem;
+    }
+  }
+}

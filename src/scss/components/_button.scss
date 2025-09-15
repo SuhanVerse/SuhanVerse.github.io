@@ -1,0 +1,65 @@
+@use '../abstracts/variables' as vars;
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: vars.$color-white;
+    background-color: vars.$black-deep;
+    padding: 1.5rem 4rem;
+    border: 1px solid vars.$black-deep;
+    border-radius: 10rem;
+    box-shadow: 0 1rem 2rem rgba(vars.$black, 0.17);
+    transition: all 0.2s;
+    margin-top: 2.2rem;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    z-index: -100;
+    transition: all 400ms;
+    color: inherit;
+    background: inherit;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2rem 3rem rgba(vars.$black, 0.17);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba(vars.$black, 0.17);
+  }
+
+  &__hire {
+    &,
+    &:link,
+    &:visited {
+      opacity: 0.7;
+      color: vars.$color-white;
+      border: 1px solid vars.$color-white;
+      background-color: transparent;
+    }
+  }
+}

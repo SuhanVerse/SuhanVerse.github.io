@@ -1,0 +1,20 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as vars;
+
+/* ----- Grid System ----- */
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  @include mix.clearfix;
+
+  @media (min-width: 768px) {
+    display: table;
+  }
+
+  [class^='col-'] {
+    @media (min-width: 768px) {
+      width: calc(50% - #{vars.$gutter-vertical});
+      float: left;
+    }
+  }
+}

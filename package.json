@@ -1,0 +1,35 @@
+{
+  "name": "suhanverse-portfolio",
+  "version": "1.1.0",
+  "description": "Personal portfolio website of Suhan Khadka showcasing embedded systems, AI/ML, and full-stack projects.",
+  "author": "Suhan Khadka",
+  "license": "Apache-2.0",
+  "homepage": "https://suhanverse.github.io",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --dist-dir docs",
+    "clean": "rm -rf .parcel-cache docs",
+    "lint": "echo 'Linting not configured yet. Add ESLint for JS or stylelint for SCSS.'",
+    "preview": "npx serve docs",
+    "deploy": "npm run build && git add docs && git commit -m 'Deploy updated portfolio site' && git push origin main"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.5",
+    "@parcel/transformer-sass": "^2.15.4",
+    "cssnano": "^6.0.1",
+    "parcel": "^2.15.4",
+    "sass": "^1.69.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "postinstall": "npm run build"
+}
