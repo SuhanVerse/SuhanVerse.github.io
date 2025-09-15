@@ -19,10 +19,13 @@ $color-black-1: $black-muted;
 $color-white-2: $white-muted;
 
 /* ----- Colors: Semantic Roles ----- */
-$color-bg: $white-light;
-$color-text: $black-deep;
+$color-bg: #fdfdfd;
+$color-bg-dark: #1a1a1a;
+$color-text: #333;
+$color-text-dark: #f4f4f4;
 $color-heading: $black;
 $color-accent: #0077b6;
+$color-accent-dark: #90e0ef;
 $color-border: #ddd;
 $color-shadow: rgba(0, 0, 0, 0.1);
 

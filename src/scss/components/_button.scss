@@ -1,5 +1,17 @@
 @use '../abstracts/variables' as vars;
 
+body.dark-mode {
+  background-color: vars.$color-bg-dark;
+  color: vars.$color-text-dark;
+
+  .btn {
+    background-color: vars.$color-accent-dark;
+    color: vars.$color-bg-dark;
+  }
+}
+
+
+
 .btn {
   &,
   &:link,

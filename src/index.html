@@ -31,11 +31,15 @@
     .social-icons img:hover {
       transform: scale(1.1);
     }
+    html {
+    scroll-behavior: smooth;
+    }
   </style>
 </head>
 
 <body>
   <!-- Navigation -->
+   <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
   <div class="navigation">
     <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
     <label for="nav-toggle" class="navigation__button">
@@ -100,9 +104,9 @@
         <h2 class="heading-secondary">About Me</h2>
       </div>
       <p class="intro-text">
-        I'm a final-year Computer Engineering student from Lalitpur, Nepal. I thrive on solving real-world problems through embedded systems and intelligent software. My approach is hands-on, iterative, and community-driven. I believe in clarity, reproducibility, and expressive design.
+        I'm a Computer Engineering student from Lalitpur, Nepal. I thrive on solving real-world problems through embedded systems and intelligent software. My approach is hands-on, iterative, and community-driven. I believe in clarity, reproducibility, and expressive design.
       </p>
-      <a href="../cv.pdf" class="btn" target="_blank">Download My CV</a>
+      <a href="./up_/cv.pdf?v=2025" class="btn" target="_blank" download>Download My CV</a>
     </section>
 
     <!-- Projects -->
