@@ -12,7 +12,7 @@ Welcome to my personal portfolio website! I'm **Suhan Khadka**, a Computer Engin
 
 ## 🧠 About Me
 
-I specialize in building intelligent systems and reproducible workflows across hardware and software domains. My work blends engineering precision with expressive design, and I document my process openly to foster collaboration and learning.
+I build smart systems that work across both hardware and software. I focus on making things reliable, well-designed, and easy to understand. I share my work openly so others can learn and collaborate with me.
 
 ---
 
@@ -75,13 +75,6 @@ SuhanVerse.github.io/
 ## 📸 Featured Projects
 
 - 🔧 [LSPP60days Challenge](https://github.com/SuhanVerse/LSPP60days-Challenge) — Embedded Rust + AI/ML
-
----
-
-## 📝 Blog
-
-I occasionally write about my learning experiences, technical deep-dives, and project retrospectives.  
-Check out my latest posts on the [Blog](https://suhanverse.github.io/blog) page.
 
 ---
 
