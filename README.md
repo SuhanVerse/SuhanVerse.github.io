@@ -78,13 +78,6 @@ SuhanVerse.github.io/
 
 ---
 
-## 📈 Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SuhanVerse&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SuhanVerse&layout=compact&theme=radical)
-
----
-
 ## 📫 Connect With Me
 
 <p align="left">
