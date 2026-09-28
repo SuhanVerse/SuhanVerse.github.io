@@ -7,11 +7,11 @@
   "homepage": "https://suhanverse.github.io",
   "scripts": {
     "dev": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --dist-dir docs",
+    "build": "parcel build src/index.html --dist-dir docs --no-source-maps",
     "clean": "rm -rf .parcel-cache docs",
-    "lint": "echo 'Linting not configured yet. Add ESLint for JS or stylelint for SCSS.'",
+    "lint": "node --check src/js/index.js && node scripts/check-site.mjs",
     "preview": "npx serve docs",
-    "deploy": "npm run build && git add docs && git commit -m 'Deploy updated portfolio site' && git push origin main"
+    "deploy": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.22.0",
@@ -38,6 +38,5 @@
     "defaults",
     "not IE 11",
     "maintained node versions"
-  ],
-  "postinstall": "npm run build"
+  ]
 }
