@@ -1,99 +1,42 @@
-# 🌐 SuhanVerse.github.io
+# SuhanVerse portfolio
 
-Welcome to my personal portfolio website! I'm **Suhan Khadka**, a Computer Engineering student from Lalitpur, Nepal, passionate about embedded systems, AI/ML, and full-stack development. This site showcases my technical journey, featured projects, and public learning ethos.
+Personal portfolio for Suhan Khadka, a Computer Engineering student focused on embedded systems and intelligent software.
 
----
+Live site: https://suhanverse.github.io/
 
-## 🚀 Live Site
+## Local development
 
-🔗 [Visit Portfolio](https://suhanverse.github.io)
+Use Node.js 20 or newer and npm. Install the locked dependencies with `npm ci`, then run `npm run dev`.
 
----
+- `npm run lint`: check JavaScript syntax, section links, local asset references, and duplicate IDs.
+- `npm run build`: compile the source into `docs/` without source maps.
+- `npm run preview`: serve the compiled site locally.
+- `npm run clean`: remove local Parcel cache and generated `docs/` files.
+- `npm run deploy`: build only; it does not commit, push, or publish.
 
-## 🧠 About Me
+## Structure
 
-I build smart systems that work across both hardware and software. I focus on making things reliable, well-designed, and easy to understand. I share my work openly so others can learn and collaborate with me.
+- `src/index.html`: semantic page content and project descriptions.
+- `src/css/site.css`: current layout, themes, responsive rules, and focus styles.
+- `src/js/index.js`: theme preference, dialog navigation, contact feedback, and year.
+- `src/compressed/profile.webp` and `profile.jpg`: resized portrait served by the page.
+- `src/cv.pdf`: downloadable résumé.
+- `scripts/check-site.mjs`: dependency-free source checks.
+- `docs/`: committed production build for GitHub Pages.
+- `src/scss/` and `backup.html`: legacy layout material, not imported by the current page.
 
----
+Edit source files, run the checks, rebuild `docs/`, and review the generated changes in a pull request. Confirm the Pages publishing configuration before merging; updating the publishing branch may deploy the site. Do not edit generated files directly. `.parcel-cache/` is local build state and must not be committed.
 
-## 🛠️ Tech Stack
+## Content and verification
 
-- **Embedded Systems**: Rust, AVR, Arduino, IoT
-- **AI/ML**: Python, TensorFlow, Keras, Scikit-learn
-- **Web Development**: MERN Stack, GitHub Pages, Docker
-- **Design & Modeling**: Figma, Fusion 360
-- **Tooling**: CI/CD, Markdown, LaTeX, GitHub Actions
+Project summaries are based on the linked repositories. Update them when the underlying work changes; do not add unmeasured accuracy, speed, or reliability claims.
 
----
+Before release, check keyboard navigation, the theme toggle with Enter/Space, menu opening/closing with Escape, section focus, both themes, reduced motion, and mobile widths from 320px upward. Check the CV download and external project links.
 
-## 📂 Project Structure
+The contact form uses Formspree and retains a normal POST fallback without JavaScript. The enhanced form reports server acceptance or errors and preserves input on failure. Mocked tests cannot confirm email delivery: a real test submission and recipient confirmation are still required.
 
-```
-SuhanVerse.github.io/
-├── index.html                # Main homepage
-├── cv.pdf                    # Resume download
-├── README.md                 # Project overview and instructions
-├── LICENSE                   # Apache-2.0 license
-├── package.json              # Build scripts and dependencies
-├── package-lock.json         # Dependency lock file
-├── .gitignore                # Git ignored files
-│
-├── js/                       # JavaScript for interactivity
-│   └── index.js
-│
-├── img/                      # Original image assets
-│   ├── mypic.jpg
-│   ├── *.svg
-│
-├── compressed/               # Optimized images (webp, compressed jpg)
-│   ├── header.webp
-│   ├── mypic.webp
-│
-├── scss/                     # Modular SCSS architecture
-│   ├── abstracts/            # Variables, mixins, functions
-│   │   ├── _variables.scss
-│   │   ├── _mixins.scss
-│   │   ├── _functions.scss
-│   │   └── index.scss
-│   ├── base/                 # Base styles (typography, layout)
-│   │   ├── _base.scss
-│   │   ├── _grid.scss
-│   │   ├── _type.scss
-│   │   ├── _utils.scss
-│   ├── components/           # UI components
-│   │   ├── _button.scss
-│   │   ├── _form.scss
-│   │   ├── _navbar.scss
-│   │   ├── _popup.scss
-│   ├── pages/                # Page-specific styles
-│   │   └── _index.scss
-│   └── main.scss             # Entry point for compiled styles
-```
+The image originals and older assets are retained for reference. Only the resized portrait is referenced by the current page. The old image conversion script is not part of the production build.
 
----
+## License
 
-## 📸 Featured Projects
-
-- 🔧 [LSPP60days Challenge](https://github.com/SuhanVerse/LSPP60days-Challenge) — Embedded Rust + AI/ML
-
----
-
-## 📫 Connect With Me
-
-<p align="left">
-    <a href="https://x.com/ultraman_62" target="_blank">X</a> •
-    <a href="https://www.linkedin.com/in/suhan-khadka" target="_blank">LinkedIn</a> •
-    <a href="https://facebook.com/suhan.khadka.35" target="_blank">Facebook</a> •
-    <a href="https://instagram.com/suhan.khadka.30" target="_blank">Instagram</a> •
-    <a href="mailto:khsuhan100@gmail.com">Email</a>
-</p>
-
----
-
-## 📄 License
-
-This project is licensed under the [Apache-2.0 License](LICENSE).
-
----
-
-> Crafted with ❤️ in Nepal by Suhan Khadka
+Apache-2.0; see LICENSE.
