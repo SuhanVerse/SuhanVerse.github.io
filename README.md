@@ -4,6 +4,8 @@ Personal portfolio for Suhan Khadka, a Computer Engineering student focused on e
 
 Live site: https://suhanverse.github.io/
 
+This is the Parcel-based GitHub Pages portfolio. The separate [Portfolio_Website](https://github.com/SuhanVerse/Portfolio_Website) repository builds [suhankhadka.com.np](https://suhankhadka.com.np/) with esbuild and an optional Three.js scene. Each repository maintains its own source and generated publishing files.
+
 ## Local development
 
 Use Node.js 20 or newer and npm. Install the locked dependencies with `npm ci`, then run `npm run dev`.
